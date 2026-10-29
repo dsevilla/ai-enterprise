@@ -1,0 +1,12 @@
+{
+  "name": "ai-enterprise-3d",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Presentación 3D local sobre integración de IA empresarial",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "python3 -m http.server 8006"
+  },
+  "dependencies": { "three": "0.180.0" },
+  "devDependencies": { "esbuild": "0.28.1" }
+}

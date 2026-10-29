@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#dfe9e7">
+  <meta name="description" content="Presentación 3D sobre la integración de la IA con los sistemas de una empresa">
+  <title>IA que conoce la empresa · Presentación 3D</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+</head>
+<body>
+  <div id="scene" aria-hidden="true"></div>
+  <div class="edge-fade" aria-hidden="true"></div>
+  <div id="scene-transition" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">◈</span><span>IA <b>+ EMPRESA</b></span></div>
+    <span class="topbar-note">UNA PRESENTACIÓN SOBRE INTEGRACIÓN</span>
+  </header>
+  <main>
+    <aside id="holo-screen" class="holo-screen" aria-live="polite" aria-label="Información de la escena">
+      <div class="holo-top"><span>VISIÓN / SISTEMAS CONECTADOS</span><span class="holo-light">● EN LÍNEA</span></div>
+      <div id="holo-content"></div>
+      <div class="holo-bottom"><span id="panel-step">01 / 08</span><span>IA APLICADA AL CONTEXTO REAL</span></div>
+    </aside>
+    <div class="scene-caption"><span id="scene-kicker">01 / CONTEXTO</span><strong id="scene-name">Una empresa, muchos sistemas</strong></div>
+  </main>
+  <footer class="hud-bottom">
+    <div class="progress"><span id="step-label">01 / 08</span><div class="progress-track"><span id="progress-bar"></span></div><span class="hint">ESPACIO O → PARA AVANZAR</span></div>
+    <div class="controls"><button id="previous" aria-label="Escena anterior">← <span>Anterior</span></button><button id="next" aria-label="Escena siguiente"><span>Siguiente</span> →</button></div>
+  </footer>
+  <div id="fallback" class="fallback" hidden>Esta presentación necesita un navegador con WebGL 2. Abre esta página en un navegador con aceleración gráfica disponible.</div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
